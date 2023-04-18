@@ -43,6 +43,8 @@ body {
   font-family: 'Single Day', cursive;
   margin-bottom: 10px;
   text-align: center;
+  font-size: 20px;
+  color: black;
 }
 
 .parents, .fun {
@@ -77,6 +79,12 @@ video {
   padding: 2%;
   color: white;
   border-radius: 10px;
+  margin: 10%
+}
+
+.buttonbox {
+  display: flex;
+  align-items: center;
 }
 
 body.fh5co-offcanvas {
@@ -617,7 +625,7 @@ figure {
 
 .heading-section {
   padding-bottom: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
 }
 
 .heading-section h2 {
