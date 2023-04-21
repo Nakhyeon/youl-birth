@@ -863,6 +863,7 @@ figure {
 
 .gallery .gallery-img {
   width: 100%;
+  border-radius: 5px;
   float: left;
   overflow: hidden;
   position: relative;
