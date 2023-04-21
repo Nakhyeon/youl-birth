@@ -65,21 +65,30 @@ body {
 .video {
   width: 90%;
   margin: 5%;
-  flex-direction: column;
+}
+
+.music {
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-video {
-  width: 100%;
+.play {
+  background-color: #f14e4e;
+  padding: 1% 10%;
+  color: white;
+  border-radius: 10px;
+  margin-top: 5%;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 .newbotton {
-  background-color: #F69D9D;
+  background-color: #f14e4e;
   padding: 2%;
   color: white;
   border-radius: 10px;
-  margin: 10%
+  margin: 10%;
 }
 
 .buttonbox {

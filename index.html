@@ -110,8 +110,6 @@
 							<li class="active"><a href="index.html" >Home</a></li>
 							<li><a href="when-where.html">When &amp; Where</a></li>
 							<li><a href="gallery.html">Gallery</a></li>
-							<!-- <li><a href="blog.html">Blog</a></li> -->
-							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -151,7 +149,7 @@
 						<p class="korean">정말 가끔 이러시기도 하는데...</p>
 						<div class="pic1"></div>
 						<p class="korean">저희는 정말 행복한 1년을 보내고 있답니다.</p>
-						<video muted>
+						<video controls>
 							<source src="./KakaoTalk_Video_2023-04-15-15-02-22.mp4">
 						</video>
 					</div>
@@ -200,44 +198,16 @@
 						<div class="gallery animate-box">
 							<a class="gallery-img image-popup image-popup" href="images/untitled folder 2/23.jpeg"><img src="images/untitled folder 2/23.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
 						</div>
-						<!-- <div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="images/untitled folder 2/30.jpeg"><img src="images/untitled folder 2/30.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-						</div> -->
 					</div>
 					<div class="col-md-4">
 						<div class="gallery animate-box">
 							<a class="gallery-img image-popup" href="images/untitled folder 2/20.jpeg"><img src="images/untitled folder 2/20.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
 						</div>
-						<!-- <div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="images/untitled folder 2/48.jpeg"><img src="images/untitled folder 2/48.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-						</div>
-						<div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="images/untitled folder 2/48.jpeg"><img src="images/untitled folder 2/48.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-						</div> -->
 					</div>
 					<div class="col-md-4">
 						<div class="gallery animate-box">
 							<a class="gallery-img image-popup" href="images/untitled folder 2/40.jpeg"><img src="images/untitled folder 2/49.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
 						</div>
-						<!-- <div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="images/untitled folder 2/48.jpeg"><img src="images/untitled folder 2/48.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-						</div>
-						<div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="images/untitled folder 2/48.jpeg"><img src="images/untitled folder 2/48.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
-						</div> -->
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="fh5co-started" style="background-image:url(images/cover_bg_2.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section">
-						<h2>Contact</h2>
-						<h3>엄마</h3>
-						<h3>아빠</h3>
 					</div>
 				</div>
 			</div>
@@ -264,15 +234,20 @@
 	
 	<!-- jQuery -->
 	<script src="dist/scripts.min.js"></script>
-
-
-	<!-- For demo purposes Only ( You may delete this anytime :-) -->
+	
+	
 	<div id="colour-variations">
 		<a class="option-toggle">^^</a>
 		<h3>YOUL</h3>
 		<ul class="one-color">
 			<img src="./IMG_2187.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co" style="border-radius: 100px;">
 		</ul>
+		<audio id="audioContainer" autoplay>
+			<source id="audioSource" src="./bgmusic.mp3"type='audio/mp3'/>   
+		</audio>
+		<div class="music">
+			<button class="play" onclick="music()">MUSIC</button>
+		</div>
 	</div>
 	<script src="js/jquery.style.switcher.js"></script>
 	<script>
@@ -289,9 +264,13 @@
 				$('#colour-variations').toggleClass('sleep');
 			});
 		});
+		
+		function music() {
+			const audioContainer = document.querySelector('#audioContainer');
+			audioContainer.loop = true
+			audioContainer.play()
+			}
 	</script>
-	<!-- End demo purposes only -->
-
 	</body>
 </html>
 
